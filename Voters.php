@@ -56,12 +56,8 @@
           transform: unset !important;
         }
 
-        .btns-respo {
-          /* display: flex;
-          flex-wrap: nowrap;
-          align-items: center;
-          justify-items: center;
-          overflow: hidden; */
+        .table-responsive-sm::-webkit-scrollbar {
+          height: 5px !important;
         }
     </style>
 </head>
@@ -108,7 +104,7 @@
                         <button class='photo btn btn-link position-absolute top-50 end-0 translate-middle-y'><span class='fa fa-edit' data-bs-toggle='modal' data-bs-target='#edit_photo'></span></button>
                       </td>
                       <td>grtyrhhha2</td>
-                      <td>
+                      <td class="no-wrap">
                         <button class='btn btn-success btn-sm edit btn-flat st-btn' data-bs-toggle="modal" data-bs-target="#edit"><i class='fa fa-edit'></i> Edit</button>
                         <button class='btn btn-danger btn-sm delete btn-flat st-btn' data-bs-toggle="modal" data-bs-target="#delete"><i class='fa fa-trash'></i> Delete</button>
                       </td>

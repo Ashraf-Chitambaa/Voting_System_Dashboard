@@ -49,6 +49,10 @@
         .box.outlined-card {
           transform: unset !important;
         }
+
+        .table-responsive-sm::-webkit-scrollbar {
+          height: 5px !important;
+        }
     </style>
 </head>
 
@@ -98,7 +102,7 @@
                           </td>
                           <td>firstname</td>
                           <td>lastname</td>
-                          <td>
+                          <td class="no-wrap">
                             <button class='btn btn-success btn-sm edit btn-flat st-btn' data-bs-toggle="modal" data-bs-target="#edit"><i class='fa fa-edit'></i> Edit</button>
                             <button class='btn btn-danger btn-sm delete btn-flat st-btn' data-bs-toggle="modal" data-bs-target="#delete"><i class='fa fa-trash'></i> Delete</button>
                           </td>

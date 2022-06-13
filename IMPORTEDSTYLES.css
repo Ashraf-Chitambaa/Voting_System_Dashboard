@@ -25,7 +25,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(2, 55, 63, .4);
+    background-color: white;
     box-shadow: inset var(--boxShadow);
     -webkit-box-shadow: inset var(--boxShadow);
     -moz-box-shadow: inset var(--boxShadow);
@@ -36,6 +36,23 @@
 .modal-open {
     overflow-y: inherit !important;
     padding-right: 1em !important;
+}
+/* table data with a class of nowrap */ 
+.no-wrap {
+    min-width: 140px !important;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(2, 55, 63, .4);
+    box-shadow: inset var(--boxShadow);
+    -webkit-box-shadow: inset var(--boxShadow);
+    -moz-box-shadow: inset var(--boxShadow);
+    outline: 1px solid var(--primaryColor);
 }
 
 ::-webkit-scrollbar-thumb {

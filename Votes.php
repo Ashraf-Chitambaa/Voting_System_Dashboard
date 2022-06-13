@@ -43,6 +43,10 @@
             width: 100%;
             background-color: #002A4B;
         }
+
+        .table-responsive-sm::-webkit-scrollbar {
+            height: 5px !important;
+        }
     </style>
 </head>
 
@@ -68,7 +72,8 @@
                             <button type="button" class="btn btn-danger btn-sm btn-flat my-2" data-bs-toggle="modal" data-bs-target="#reset">
                                 <i class="fa fa-refresh"></i> Reset
                             </button>
-                        <div class="box-body table-responsive-md">
+                        </div>
+                        <div class="box-body table-responsive-sm">
                             <table id="example1" class="table table-bordered table-hover">
                                 <thead>
                                 <th class="hidden"></th>

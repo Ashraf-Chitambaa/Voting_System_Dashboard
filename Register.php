@@ -28,12 +28,6 @@
           -moz-user-select: none;
         }
       
-        select {
-            all: unset;
-            width: max-content !important;
-            height: 25px !important;
-        }
-      
         .btn-sm.st-btn {
           border-radius: 0 !important;
           text-transform: capitalize;
@@ -56,6 +50,10 @@
             font-size: 1rem !important; 
             text-align: center;
             display: block !important;
+        }
+
+        .table-responsive-sm::-webkit-scrollbar {
+            height: 5px !important;
         }
 
     </style>
@@ -101,11 +99,11 @@
                     <div class="col-lg-7 col-md-7">
                         <!-- small box -->
                         <div class="small-box shadowed-card">
-                            <div class="box-body">
+                            <div class="box-body table-responsive-md">
                                 <table id="example1" class="table table-bordered">
                                     <thead>
                                         <th class="hidden"></th>
-                                        <th>Field Name</th>
+                                        <th class="no-wrap">Field Name</th>
                                         <th>Type</th>
                                         <th>Tools</th>
                                     </thead>
@@ -114,7 +112,7 @@
                                             <td class='hidden'></td>
                                             <td>username</td>
                                             <td>text</td>
-                                            <td>
+                                            <td class="no-wrap">
                                                 <button class='btn btn-success btn-sm edit btn-flat st-btn' data-bs-toggle="modal" data-bs-target="#edit-field">
                                                     <i class='fa fa-edit'></i> Edit
                                                 </button>
@@ -135,7 +133,7 @@
                     <div class="box col outlined-card cornered-card">
                         <div class="box-header with-border">
                             <button type="button" class="btn btn-primary btn-sm btn-flat" data-bs-toggle="modal" data-bs-target="#add-new">
-                                <i class="fa fa-plus"></i> New Pos
+                                <i class="fa fa-plus"></i> New Poition
                             </button>
                         </div>
                         
@@ -144,7 +142,7 @@
                                 <thead>
                                     <th class="hidden"></th>
                                     <th>Description</th>
-                                    <th>Maximum Vote</th>
+                                    <th class="no-wrap">Maximum Vote</th>
                                     <th>Tools</th>
                                 </thead>
 
@@ -153,7 +151,7 @@
                                         <td class='hidden'></td>
                                         <td>chair</td>
                                         <td>1</td>
-                                        <td>
+                                        <td class="no-wrap">
                                             <button class='btn btn-success btn-sm edit btn-flat st-btn' data-bs-toggle="modal" data-bs-target="#edit-position">
                                                 <i class='fa fa-edit'></i> Edit
                                             </button>
